@@ -1,0 +1,10 @@
+<!Doctype html>
+<html>
+<body>Logged into to user : <p id="username"></p>
+<script>
+  var keyvalue = location.search.split('=');
+  var username = keyvalue[1];
+  document.getElementById("username").innerHTML = username;
+</script>
+</body>
+</html>
