@@ -7,6 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class XpathVerificationTest {
@@ -18,10 +19,14 @@ public class XpathVerificationTest {
 	}
 	@Test
 	public void testXpathVerification() {
-		driver.findElement(By.xpath("html/body/input[1]")).sendKeys("abcd");
-		driver.findElement(By.xpath("html/body/input[2]")).sendKeys("1234");
-		String pageSource = driver.getPageSource();
-		assertTrue(pageSource.contains("text"));
+		WebElement un = driver.findElement(By.xpath("html/body/input[1]"));
+		un.sendKeys("abcde");
+		String attribute = un.getAttribute("value");
+		assertEquals("abcde", attribute);
+		WebElement pwd = driver.findElement(By.xpath("html/body/input[2]"));
+		pwd.sendKeys("12345");
+		String attribute1 = pwd.getAttribute("value");
+		assertEquals("12345", attribute1);
 	}
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
