@@ -8,7 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class PageScrollDownVerification {
+public class PageScrollDownVerificationTest {
 	public static WebDriver driver;
 
 	@BeforeClass

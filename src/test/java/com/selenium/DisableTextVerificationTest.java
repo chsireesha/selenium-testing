@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class DisableTextVerification {
+public class DisableTextVerificationTest {
 	public static WebDriver driver;
 
 	@BeforeClass

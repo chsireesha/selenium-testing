@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class SelectndDeselectVerification {
+public class SelectndDeselectVerificationTest {
 	public static WebDriver driver;
 
 	@BeforeClass

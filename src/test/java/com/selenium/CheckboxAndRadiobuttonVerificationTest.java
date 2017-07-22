@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CheckboxAndRadiobuttonVerification {
+public class CheckboxAndRadiobuttonVerificationTest {
 	public static WebDriver driver;
 
 	@BeforeClass

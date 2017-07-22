@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class XpathTraversingVerification {
+public class XpathTraversingVerificationTest {
 	public static WebDriver driver;
 
 	@BeforeClass
@@ -39,7 +39,8 @@ public class XpathTraversingVerification {
 		WebElement element3 = driver.findElement(By.xpath("//td[.='java']/ancestor::body"));
 		String text4 = element3.getText();
 		assertTrue(text4.contains("sql"));
-}
+		}
+
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	driver.close();

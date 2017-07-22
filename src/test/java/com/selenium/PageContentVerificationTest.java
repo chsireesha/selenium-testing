@@ -14,14 +14,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class PageContentVerificationTest {
-
 	public static WebDriver driver;
-	
+
 	@BeforeClass
 	public static void setUp() throws MalformedURLException {
 		driver=new FirefoxDriver();
 		driver.get(new File("./html/pagetitle.html").toURI().toURL().toString());
 	}
+
 	@Test
 	public void testVerifyPageTitle() {
 		String title = driver.getTitle();

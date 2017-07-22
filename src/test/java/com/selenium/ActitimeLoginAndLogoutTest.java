@@ -9,13 +9,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ActitimeLoginAndLogout {
+public class ActitimeLoginAndLogoutTest {
 public static WebDriver driver;
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		driver=new FirefoxDriver();
 		driver.get("http://localhost/login.do");
 	}
+
 	@Test
 	public void testActitimeLoginAndLogout() {
 		driver.findElement(By.id("username")).sendKeys("admin");
@@ -26,6 +28,7 @@ public static WebDriver driver;
 		String title = driver.getTitle();
 		assertEquals("actiTIME - Login", title);
 	}
+
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		driver.close();

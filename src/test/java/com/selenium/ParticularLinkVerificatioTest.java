@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ParticularLinkVerification {
+public class ParticularLinkVerificatioTest {
 	public static WebDriver driver;
 
 	@BeforeClass
