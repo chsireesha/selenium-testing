@@ -34,10 +34,10 @@ public class SynchronizationVerificationTest {
 		driver.findElement(By.xpath("//button[.='Sign in']")).click();
 		//explicit wait
 		WebDriverWait wait=new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.titleContains("Home"));
+		wait.until(ExpectedConditions.titleContains("Dashboard"));
 		//to get the login page title
 		String login = driver.getTitle();
-		assertEquals("Home", login);
+		assertEquals("Dashboard", login);
 	}
 
 	@AfterClass
